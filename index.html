@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Funngro – Real Work for Teens & Companies">
+  <meta property="og:description"
+    content="Connect teens with real companies. Paid internships, real projects, real experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://your-site.netlify.app/image01.png">
+  <meta property="og:url" content="https://your-site.netlify.app/">
+
+
+  <title>Paid Internships for Teens in India | Funngro</title>
+  <meta name="description"
+    content="Find paid internships and real work opportunities for teenagers in India. Work with real companies, build skills, and earn money with Funngro.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <button id="themeToggle" class="theme-btn">🌙</button>
+      <h1 class="logo">Funngro</h1>
+      <nav>
+        <a href="index.html">For Teens</a>
+        <a href="company.html">For Companies</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero reveal">
+    <div class="container hero-flex">
+      <div class="hero-text">
+        <h1>Earn While You Learn</h1>
+        <h2>Real Work. Real Companies. Real Pay.</h2>
+        <p>Funngro connects teenagers with real companies looking for smart, motivated young talent.</p>
+        <a href="#" class="btn">Join as a Teen</a>
+      </div>
+
+      <div class="hero-img">
+        <img src="image01.png" alt="Teen working on real company projects">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <h2>How Funngro Works for Teens</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Sign Up for Free</h3>
+          <p>Create your profile and share your interests.</p>
+        </div>
+        <div class="card">
+          <h3>Get Matched</h3>
+          <p>We match you with real company projects.</p>
+        </div>
+        <div class="card">
+          <h3>Work Remotely</h3>
+          <p>Complete tasks with flexible hours.</p>
+        </div>
+        <div class="card">
+          <h3>Get Paid</h3>
+          <p>Secure payments after completion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section light">
+    <div class="container">
+      <h2>Why Teens Choose Funngro</h2>
+      <ul class="list">
+        <li>Paid internships & projects</li>
+        <li>Flexible work hours</li>
+        <li>Real industry exposure</li>
+        <li>Skill development</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section reveal">
+    <div class="container">
+      <h2>Types of Work Available</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="icon01.jpg" alt="Teen doing social media marketing">
+          <h3>Marketing & Social Media</h3>
+        </div>
+
+        <div class="card">
+          <img src="icon02.png" alt="Teen writing content for companies">
+          <h3>Content Writing</h3>
+        </div>
+
+        <div class="card">
+          <img src="icon03.webp" alt="Teen working on data research tasks">
+          <h3>Data & Research</h3>
+        </div>
+
+        <div class="card">
+          <img src="icon04.jpg" alt="Teen designing graphics for brands">
+          <h3>Design & Media</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Start Your Work Journey Today</h2>
+      <a href="#" class="btn dark">Get Started</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Funngro. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    reveals.forEach(section => observer.observe(section));
+
+    const toggle = document.getElementById('themeToggle');
+
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggle.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Funngro – Real Work for Teens & Companies">
+  <meta property="og:description"
+    content="Connect teens with real companies. Paid internships, real projects, real experience.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://your-site.netlify.app/image01.png">
+  <meta property="og:url" content="https://your-site.netlify.app/">
+
+
+  <title>Hire Interns & Teen Talent in India | Funngro</title>
+  <meta name="description"
+    content="Hire trained teen interns for marketing, operations, and research. Scale your business with Funngro.">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Funngro</h1>
+      <nav>
+        <a href="index.html">For Teens</a>
+        <a href="company.html">For Companies</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero reveal">
+    <div class="container hero-flex">
+
+      <div class="hero-text">
+        <h1>Hire Skilled Teen Talent</h1>
+        <h2>Faster. Smarter. Cost-Effective.</h2>
+        <p>Access trained teen talent for marketing, operations, research, and execution without long hiring cycles.</p>
+        <a href="#" class="btn">Hire Talent</a>
+      </div>
+
+      <div class="hero-img">
+        <img src="image01.png" alt="Company hiring teen interns through Funngro platform">
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <h2>Why Companies Choose Funngro</h2>
+      <ul class="list">
+        <li>Pre-trained teen workforce</li>
+        <li>Lower hiring cost</li>
+        <li>Fast project turnaround</li>
+        <li>Managed quality</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section light">
+    <div class="container">
+      <h2>Use Cases Across Teams</h2>
+
+      <div class="grid">
+        <div class="card">
+          <img src="image02.avif" alt="Teen supporting marketing and growth tasks">
+          <h3>Marketing & Growth</h3>
+          <p>Campaign execution, social media handling, influencer research.</p>
+        </div>
+
+        <div class="card">
+          <img src="image03.jpg" alt="Teen handling operations and research work">
+          <h3>Operations & Research</h3>
+          <p>Data entry, market research, documentation support.</p>
+        </div>
+
+        <div class="card">
+          <img src="image04.png" alt="Teen assisting with content and design work">
+          <h3>Content & Design</h3>
+          <p>Blogs, graphics, video editing, and creative support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section reveal">
+    <div class="container">
+      <h2>How Hiring Works</h2>
+      <div class="grid">
+        <div class="card process-card">
+          <h3>Post Requirement</h3>
+          <p>Share your project details and skills needed.</p>
+        </div>
+
+        <div class="card process-card">
+          <h3>Get Matched</h3>
+          <p>We assign the best-fit teen talent.</p>
+        </div>
+
+        <div class="card process-card">
+          <h3>Track Progress</h3>
+          <p>Monitor tasks and timelines easily.</p>
+        </div>
+
+        <div class="card process-card">
+          <h3>Pay Securely</h3>
+          <p>Pay only for approved work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Start Hiring Today</h2>
+      <a href="#" class="btn dark">Post a Project</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Funngro. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    reveals.forEach(section => observer.observe(section));
+  </script>
+
+</body>
+
+</html>
